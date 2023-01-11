@@ -29,6 +29,6 @@ The code of the library is in the **LinkedList.cpp file**.
 > - `LinkedList<T>::void remove(unsigned int index)`\
 >   Removes the i-element.\
 > - `LinkedList<T>::int index(T item, bool (*equals)` (T, T))\
->   Returns the index of the element. to find, or -1 if not found. \
+>   Returns the index of the element. to find, or -1 if not found.<br/>
 > - `LinkedList<T>::void sort(int (*compareTo) (T, T))`\
 >   Sort applying 'merge sort' algorithm. \
