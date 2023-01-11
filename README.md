@@ -10,7 +10,7 @@ The code of the library is in the **LinkedList.cpp file**.
 > - LinkedList<T>
 
 > ### Functions
-> - `LinkedList<T>::LinkedList()`
+> - `LinkedList<T>::LinkedList()`\
 >   Create new empty list.
 > - `LinkedList<T>::LinkedList(void *array, size_t size)` -> Create new empty list an insert data from array
 > - `LinkedList<T>::unsigned int len()` -> get the number of items.
