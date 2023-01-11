@@ -1,5 +1,5 @@
 # LinkedList
-LinkedList implementation for c++.
+LinkedList implementation for C++.
 
 The code of the library is in the **LinkedList.cpp file**.
 
