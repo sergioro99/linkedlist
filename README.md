@@ -8,7 +8,7 @@ The code of the library is in the **LinkedList.cpp file**.
 >
 > ### Objects
 > - LinkedList<T>
-
+>
 > ### Functions
 > - `LinkedList<T>::LinkedList()`\
 >   Create new empty list.
@@ -42,4 +42,4 @@ The code of the library is in the **LinkedList.cpp file**.
 > 
 > - `LinkedList<T>::void sort(int (*compareTo) (T, T))`\
 >   Sort applying 'merge sort' algorithm.
-###
+##
