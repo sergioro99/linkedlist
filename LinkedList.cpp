@@ -45,6 +45,7 @@ class LinkedList {
         T pop();
         T get(unsigned int index);
         void remove(unsigned int index);
+        void clear();
         int index(T item, bool (*equals) (T, T));
         void sort(int (*compareTo) (T, T));
 };
@@ -260,6 +261,31 @@ void LinkedList<T>::remove(unsigned int index) {
 
     this->length--;
 }
+
+/**
+ * Clear the list
+ * 
+ * This function iterate over the list clearing it.
+ * 
+ */
+template <typename T>
+void LinkedList<T>::clear() {
+    if(this->length > 0){
+        Node<T> *node = this->head;
+        Node<T> *before = NULL;
+        for (unsigned int i = 0; i < this->length; i++) {
+            before = node;
+            node = node->next;
+            delete before;
+        }
+        delete node;
+
+        this->head = NULL;
+        this->tail = NULL;
+        this->length = 0;
+    }
+}
+
 /**
  * Return the index of the given value if exists, otherwise return -1
  *
